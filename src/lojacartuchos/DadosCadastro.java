@@ -1,6 +1,8 @@
 
 package lojacartuchos;
 
+import java.util.Scanner;
+
 public class DadosCadastro {
     private int Codigo;
     private String Nome;
@@ -121,5 +123,26 @@ public class DadosCadastro {
         this.Email = Email;
     }
     
-    
+    public void CadastroCliente() {
+        Scanner scam = new Scanner(System.in);
+        setCodigo(Codigo++);
+        System.out.println("Nome do Cliente");
+        setNome(scam.next());
+        System.out.println("Logradouro do Cliente");
+        setLogradouro(scam.next());
+        System.out.println("Número do imóvel");
+        setNumero(scam.next());
+        System.out.println("Complemento");
+        setComplemento(scam.next());
+        System.out.println("Bairro");
+        setBairro(scam.next());
+        System.out.println("Cidade");
+        setCidade(scam.next());
+        System.out.println("CEP");
+        setCep(scam.next());
+        System.out.println("Telefone");
+        setTelefone(scam.next());
+        System.out.println("E-mail");
+        setEmail(scam.next());
+    }
 }
