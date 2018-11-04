@@ -8,6 +8,19 @@ public class Fornecedor {
     private String Fornecedor;
     private String ModeloEspecificacoes;
 
+    public Fornecedor() {
+    }
+
+    public Fornecedor(String NomeProduto, String DataValidade, int CodigoProduto, String Fornecedor, String ModeloEspecificacoes) {
+        this.NomeProduto = NomeProduto;
+        this.DataValidade = DataValidade;
+        this.CodigoProduto = CodigoProduto;
+        this.Fornecedor = Fornecedor;
+        this.ModeloEspecificacoes = ModeloEspecificacoes;
+    }
+
+    
+    
     public String getNomeProduto() {
         return NomeProduto;
     }

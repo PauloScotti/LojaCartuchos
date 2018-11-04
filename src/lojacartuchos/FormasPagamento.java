@@ -4,6 +4,16 @@ public class FormasPagamento {
     private int Codigo;
     private String Nome;
 
+    public FormasPagamento() {
+    }
+
+    public FormasPagamento(int Codigo, String Nome) {
+        this.Codigo = Codigo;
+        this.Nome = Nome;
+    }
+
+    
+    
     public int getCodigo() {
         return Codigo;
     }

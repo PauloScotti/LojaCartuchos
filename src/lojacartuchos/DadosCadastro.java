@@ -14,6 +14,25 @@ public class DadosCadastro {
     private String Telefone;
     private String Email;
 
+    public DadosCadastro() {
+    }
+
+    public DadosCadastro(int Codigo, String Nome, String Logradouro, String Numero, String Complemento, String Bairro, String Cidade, String Estado, String Cep, String Telefone, String Email) {
+        this.Codigo = Codigo;
+        this.Nome = Nome;
+        this.Logradouro = Logradouro;
+        this.Numero = Numero;
+        this.Complemento = Complemento;
+        this.Bairro = Bairro;
+        this.Cidade = Cidade;
+        this.Estado = Estado;
+        this.Cep = Cep;
+        this.Telefone = Telefone;
+        this.Email = Email;
+    }
+
+    
+    
     public int getCodigo() {
         return Codigo;
     }

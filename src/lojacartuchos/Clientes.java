@@ -5,6 +5,16 @@ public class Clientes extends DadosCadastro {
     private String RgInscEst;
     private String CpfCnpj;
 
+    public Clientes() {
+    }
+
+    public Clientes(String RgInscEst, String CpfCnpj) {
+        this.RgInscEst = RgInscEst;
+        this.CpfCnpj = CpfCnpj;
+    }
+
+    
+    
     public String getRgInscEst() {
         return RgInscEst;
     }
